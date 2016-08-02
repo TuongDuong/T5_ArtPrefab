@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class PlayAnim : MonoBehaviour {
-
 	public float delayTime;
 	public float attackTime;
 	private tk2dSpriteAnimator anim;
@@ -17,7 +16,7 @@ public class PlayAnim : MonoBehaviour {
 	void PlayAnimation() {
 		anim.Play ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
