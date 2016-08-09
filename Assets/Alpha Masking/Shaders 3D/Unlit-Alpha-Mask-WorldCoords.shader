@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 Shader "Alpha Masked/Unlit Alpha Masked - World Coords"
 {
 	Properties
@@ -55,11 +57,11 @@ Shader "Alpha Masked/Unlit Alpha Masked - World Coords"
 				
 				o.uvAlpha = float2(0, 0);
 				#ifdef _AXIS_X
-				o.uvAlpha = mul(_Object2World, v.vertex).zy;
+				o.uvAlpha = mul(unity_ObjectToWorld, v.vertex).zy;
 				#elif _AXIS_Y
-				o.uvAlpha = mul(_Object2World, v.vertex).xz;
+				o.uvAlpha = mul(unity_ObjectToWorld, v.vertex).xz;
 				#elif _AXIS_Z
-				o.uvAlpha = mul(_Object2World, v.vertex).xy;
+				o.uvAlpha = mul(unity_ObjectToWorld, v.vertex).xy;
 				#endif
 				
 				float s = sin(_MaskRotation);
