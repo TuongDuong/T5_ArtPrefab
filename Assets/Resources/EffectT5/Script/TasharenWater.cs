@@ -5,6 +5,7 @@ using System.Collections;
 /// Tasharen Water -- started with the Unity's built-in water, with refraction logic replaced by GrabPass.
 /// </summary>
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(Renderer))]
 [AddComponentMenu("Tasharen/Water")]
 public class TasharenWater : MonoBehaviour
@@ -22,7 +23,7 @@ public class TasharenWater : MonoBehaviour
 	/// Active quality level.
 	/// </summary>
 
-	public Quality quality;
+	public Quality quality = Quality.High;
 
 	/// <summary>
 	/// Reflection mask used when the quality is "High" or above.
