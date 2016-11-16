@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 6849c17bbd69b4fd496f96b870d9ec11
-timeCreated: 1464158540
+guid: 6eb53b7ec92054e9d92e1feea115365e
+timeCreated: 1472713641
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
@@ -49,6 +49,7 @@ TextureImporter:
   textureType: 5
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites: []
     outline: []
   spritePackingTag: 
